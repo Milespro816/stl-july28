@@ -352,6 +352,28 @@
     .tip.warn .tip-title { color: var(--gold); }
 
     /* FOOTER */
+    .team-guide-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(196, 30, 58, 0.1);
+      border: 1px solid rgba(196, 30, 58, 0.4);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      margin: 16px 16px 0;
+      text-decoration: none;
+      color: var(--text);
+      gap: 10px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .team-guide-btn:active { opacity: 0.75; }
+    .team-guide-btn-left { display: flex; align-items: center; gap: 12px; }
+    .team-guide-btn-logos { display: flex; gap: 4px; align-items: center; }
+    .team-guide-btn-logos img { width: 28px; height: 28px; object-fit: contain; }
+    .team-guide-btn-label { font-size: 14px; font-weight: 700; }
+    .team-guide-btn-sub { font-size: 12px; color: var(--text2); margin-top: 1px; }
+    .team-guide-btn-arrow { font-size: 16px; color: var(--accent2); font-weight: 700; }
+
     .footer {
       margin-top: 32px;
       padding: 0 20px;
@@ -375,6 +397,21 @@
       <div class="badge">🐾 Pet-Friendly</div>
     </div>
   </div>
+
+  <!-- TEAM GUIDE BUTTON -->
+  <a class="team-guide-btn" href="teams.html">
+    <div class="team-guide-btn-left">
+      <div class="team-guide-btn-logos">
+        <img src="https://a.espncdn.com/i/teamlogos/mlb/500/stl.png" alt="Cardinals">
+        <img src="https://a.espncdn.com/i/teamlogos/mlb/500/chc.png" alt="Cubs">
+      </div>
+      <div>
+        <div class="team-guide-btn-label">Cardinals &amp; Cubs Player Guide</div>
+        <div class="team-guide-btn-sub">Starters · Stats · Full roster by number</div>
+      </div>
+    </div>
+    <div class="team-guide-btn-arrow">→</div>
+  </a>
 
   <!-- TRAVEL OVERVIEW -->
   <div class="section">
